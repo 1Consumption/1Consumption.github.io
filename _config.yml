@@ -34,10 +34,8 @@ social:
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
-google_site_verification: google_meta_tag_verification # change to your verification string
-
+google_site_verification: "Ls8nOAFnBnjmQSPYjUWq-OTSs-xscfqQ6JF5Rk3YjG0" # change to your verification string
 #--------------------------
-
 
 # Only if your site type is GitHub Project sites and doesn't have a custom domain,
 # change below value to '/projectname'.
