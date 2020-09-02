@@ -1,5 +1,5 @@
 ---
-title: 개린이의 관점에서 Kingfisher 살펴보기(1)
+title: 개린이의 관점에서 Kingfisher 살펴보기(1) - 이미지 캐싱이란?
 author: 1Consumption
 date: 2020-08-25 01:00:00 +0800
 categories: [iOS, Library]
