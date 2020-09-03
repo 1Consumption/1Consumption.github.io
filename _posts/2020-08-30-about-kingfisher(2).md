@@ -13,7 +13,7 @@ toc: true
 
 > 개린이의 관점에서 Kingfisher 살펴보기 시리즈
 >
-> 1. [개린이의 관점에서 Kingfisher 살펴보기(1) - 이미지 캐싱이란?](https://1consumption.github.io/posts/abourt-kingfisher(1))
+> 1. [개린이의 관점에서 Kingfisher 살펴보기(1) - 이미지 캐싱이란?](https://1consumption.github.io/posts/about-kingfisher(1))
 
 # 머리말
 
@@ -121,7 +121,7 @@ public protocol Resource {
 
 ```swift
 let processor = RoundCornerImageProcessor(cornerRadius: 200)
-        imageView.kf.setImage(with: URL(string: "sample.com"), options: [.processor(processor)])
+imageView.kf.setImage(with: URL(string: "sample.com"), options: [.processor(processor)])
 ```
 
 `RoundCornerImageProcessor`의 생성자로 얼마나 동그랗게 할 건지에 대한 값을 정해주고, options에 매개변수로 넣어주면 설정됩니다! 정말 간단하네요!
