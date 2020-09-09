@@ -1,5 +1,5 @@
 ---
-title: 개린이의 관점에서 Kingfisher 살펴보기(2) - Kingfisher의 주요 기능(1)
+title: 개린이의 관점에서 Kingfisher 살펴보기(2) - Kingfisher의 주요 기능
 author: 1Consumption
 date: 2020-09-02 17:00:00 +0800
 categories: [iOS, Library]
