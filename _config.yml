@@ -71,6 +71,8 @@ disqus:
 #
 theme_mode: dual
 
+future: true
+
 # boolean type, global switch for ToC in posts.
 toc: true
 
