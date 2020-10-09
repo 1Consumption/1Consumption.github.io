@@ -35,7 +35,7 @@ toc: true
 
 Cache로부터 이미지를 미리 가져와서 보여줌으로써 앱의 성능을 향상시켜 줍니다. 엥 근데 내가 어떤 이미지를 필요로할 줄 알고 미리 cache에서 가져온다는 걸까요? 음... 그건 아무도 모릅니다. 하지만!! 내가 필요한 이미지 리스트가 주어진다면? 미리 가져올 수 있겠죠?ㅎㅎ `Kingfisher`에서도 `This is useful when you know a list of image resources you know they would probably be shown later.` 라고 말하고 있네요. 
 
-우리는 `ImagePrefetcher`를 사용해서 이미지를 미리 가져올 수 있습니다. 아래 코드는 [cheat sheet](https://github.com/onevcat/Kingfisher/wiki/Cheat-Sheet)에 있는 예시 코드입니다. cheet sheet 최고ㅎㅎ
+우리는 `ImagePrefetcher`를 사용해서 이미지를 미리 가져올 수 있습니다. 아래 코드는 [cheat sheet](https://github.com/onevcat/Kingfisher/wiki/Cheat-Sheet)에 있는 예시 코드입니다. cheat sheet 최고ㅎㅎ
 
 ```swift
 let urls = ["https://example.com/image1.jpg", "https://example.com/image2.jpg"]
@@ -72,7 +72,7 @@ anotherImageView.kf.setImage(with: urls[1])
 
 그런데 이 조건 중 최대 동시 다운로드 조건이 잘 이해가 안 가는데, 기본값이 있기 때문에 사용자가 값을 지정하지 않는 이상 1보다 작아질 수 없을 텐데... 더더욱 사용자가 동시에 다운로드 가능한 수를 1보다 작게 해둘 리도 없고요...흠흠 잘 모르겠네요ㅎ
 
-위 조건을 모두 통과했다면 prefetching이 시작되는데요, 한 번에 `maxConcurrentDownloads` 와 prefetching 할 source의 수 중에서 최솟값만큼 prefectching 합니다. 그리고 `CacheType` 을 활용해 현재 prefetching 할 source가 memory에 cache 되어 있는지, disk에 cache 되어 있는지, 둘 다 아니라서 network에서 받아와야 할지 판단합니다. 
+위 조건을 모두 통과했다면 prefetching이 시작되는데요,  `maxConcurrentDownloads` 와 prefetching 할 source의 수 중에서 최솟값만큼 prefectching 합니다. 그리고 `CacheType` 을 활용해 현재 prefetching 할 source가 memory에 cache 되어 있는지, disk에 cache 되어 있는지, 둘 다 아니라서 network에서 받아와야 할지 판단합니다. 
 
 > `CacheType`  이란?
 >
@@ -82,7 +82,7 @@ anotherImageView.kf.setImage(with: urls[1])
 
 <br>
 
-이렇게 prefetch를 완료했습니다. 그런데 이미지를 미리 가져오는 것이 어떤 UI Element를 사용할 때 효과적일까요? 바로... 스크롤을 통해 여러 요소를 볼 수 있는 `UICollectionView`나 `UITableView` 입니다.  `UITableViewDataSourcePrefetching` `UICollectionViewDataSourcePrefetching` 프로토콜을 통해 prefetch 될 cell들을 알 수 있기 때문이죠.
+이렇게 prefetch를 완료했습니다. 그런데 이미지를 미리 가져오는 것이 어떤 UI Element를 사용할 때 효과적일까요? 바로... 스크롤을 통해 여러 요소를 볼 수 있는 `UICollectionView`나 `UITableView` 입니다.  `UITableViewDataSourcePrefetching` `UICollectionViewDataSourcePrefetching` protocol을 통해 prefetch 될 cell들을 알 수 있기 때문이죠.
 
 `UITableViewDataSourcePrefetching`과 `UICollectionViewDataSourcePrefetching` 에 대해서는 다음에 꼭!!! 포스팅하도록 하겠습니다. 이번 포스트에서는  `UICollectionViewDataSourcePrefetching` 로 설명하겠습니다. 어차피 둘이 하는 일은 똑같아요ㅎㅎ
 
@@ -143,7 +143,7 @@ public struct KingfisherWrapper<Base> {
 
 엥? 왜 벌써 끝?????
 
-아.... 음.... 쓰다 보니 양이 좀 많네요ㅎ 그리고 아래의 내용들은 스크릿샷과 함께 설명을 해야 할 텐데 그럼 양이 더 많아질 거고요ㅎ... 그래서 다음 포스팅 때 쓰도록 하겠습니다 하하핳
+아.... 음.... 쓰다 보니 양이 좀 많네요ㅎ 그리고 아래의 내용들은 스크린샷과 함께 설명을 해야 할 텐데 그럼 양이 더 많아질 거고요ㅎ... 그래서 다음 포스팅 때 쓰도록 하겠습니다 하하핳
 
 * Built-in transition animation when setting images.
 * Customizable placeholder and indicator while loading images.

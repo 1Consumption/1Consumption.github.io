@@ -161,7 +161,7 @@ cache.memoryStorage.config.cleanInterval = 30
 
 이미지를 다운로드하는 중에 취소할 수 있고, 이전에 다운로드되었던 컨텐츠를 자동으로 재사용해서 성능을 향상해준다고 합니다. 먼저 `이미지를 다운로드하는 중에 취소할 수 있다.` 부터 보겠습니다.
 
-[이전 포스팅](https://1consumption.github.io/posts/about-kingfisher(2))에서 `Resource` 프로토콜을 준수하는 객체를 `setImage(with:)` 메소드의 매개변수로 넘기면, `Source`로 변환해주고, 패턴 매칭을 통해 네트워크에서 이미지를 다운받거나 로컬에서 데이터를 가져온다고 했었습니다! 아래는 `Source` 타입의 변수 `source`로 패턴 매칭하는 `KingfisherManager` 내부 코드입니다.
+[이전 포스팅](https://1consumption.github.io/posts/about-kingfisher(2))에서 `Resource` protocol을 준수하는 객체를 `setImage(with:)` 메소드의 매개변수로 넘기면, `Source`로 변환해주고, 패턴 매칭을 통해 네트워크에서 이미지를 다운받거나 로컬에서 데이터를 가져온다고 했었습니다! 아래는 `Source` 타입의 변수 `source`로 패턴 매칭하는 `KingfisherManager` 내부 코드입니다.
 
 ``` swift
 switch source {

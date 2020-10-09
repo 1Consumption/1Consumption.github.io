@@ -91,17 +91,17 @@ public protocol Resource {
 }
 ```
 
-`Resource`는 프로토콜입니다. 캐시에서 원하는 이미지를 찾기 위한 `cacheKey`(`URL`이라면 `absoluteString`이 될 것입니다.)와 이미지를 다운로드 받을 수 있는 `downloadURL`로 이루어져 있습니다. 이 `Resource` 프로토콜을 준수하는 객체를 매개변수로 넘기면 `Kingfisher`가 네트워크에서 받아올지 로컬에서 받아올지를 결정하는 것입니다.ㅎㅎ
+`Resource`는 protocol입니다. 캐시에서 원하는 이미지를 찾기 위한 `cacheKey`(`URL`이라면 `absoluteString`이 될 것입니다.)와 이미지를 다운로드 받을 수 있는 `downloadURL`로 이루어져 있습니다. 이 `Resource` protocol을 준수하는 객체를 매개변수로 넘기면 `Kingfisher`가 네트워크에서 받아올지 로컬에서 받아올지를 결정하는 것입니다.ㅎㅎ
 
 그렇다면 `Kingfisher`는 어떻게 이미지를 네트워크에서 받아올지 로컬에서 받아올지 알 수 있는 걸까요? 바로 `Kingfisher`에서 제공하는 `Source`라는 `enum`과 연관 있습니다. `Source`는 `network(Resource)`와 `provider(ImageDataProvider)`라는 내부 케이스를 가지고 있습니다. 그래서 매개변수로 넘어온 `Source` 타입을 보고 네트워크에서 받아올지 로컬에서 받아올지를 결정하는 것입니다.
 
 > 그런데 저는 setImage 메소드를 실행할 때 `Resource` protocol을 준수하는 객체를 보냈는데 어떻게 `Source` 로 변환이 되나요?
 >
-> 바로 `Resource` 프로토콜의 기본구현에 있는 `convertToSource() -> Source` 메소드와 관련이 있습니다! 이 메소드는 `Resource` 프로토콜을 준수하는 객체의 `downloadURL` (`URL` 타입입니다.)이 fileURL이라면  `provider(ImageDataProvider)`를 반환해주고, fileURL이 아니라면 `network(Resource)`를 반환해줍니다.
+> 바로 `Resource` protocol의 기본구현에 있는 `convertToSource() -> Source` 메소드와 관련이 있습니다! 이 메소드는 `Resource` protocol을 준수하는 객체의 `downloadURL` (`URL` 타입입니다.)이 fileURL이라면  `provider(ImageDataProvider)`를 반환해주고, fileURL이 아니라면 `network(Resource)`를 반환해줍니다.
 
 더 자세히 설명하고 싶지만 너무 많아서 다음에 따로 포스팅을 하겠습니다ㅎㅎ
 
-일단은 '아 `Resource` 프로토콜의 기본구현 메소드로 fileURL인지 아닌지 구분하고, 그에 맞게 `Source`의 내부 케이스로 변환해서 이미지를 로컬에서 받아올지 네트워크에서 받아올지 결정하는구나!'라고 알고 있을게요.....
+일단은 '아 `Resource` protocol의 기본구현 메소드로 fileURL인지 아닌지 구분하고, 그에 맞게 `Source`의 내부 케이스로 변환해서 이미지를 로컬에서 받아올지 네트워크에서 받아올지 결정하는구나!'라고 알고 있을게요.....
 
 <br>
 
