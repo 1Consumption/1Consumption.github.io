@@ -2,8 +2,8 @@
 title: 개린이의 관점에서 Kingfisher 살펴보기(3) - Kingfisher의 주요 기능
 author: 1Consumption
 date: 2020-09-09 21:00:00 +0800
-categories: [iOS, Library]
-tags: [개린이, 살펴보기, 이미지 캐싱]
+categories: [개린이, iOS, Library]
+tags: [살펴보기, 둘러보기, 톺아보기, 주요 기능, 이미지 캐싱, 킹피셔, Kingfisher, 사용법]
 toc: true
 
 
