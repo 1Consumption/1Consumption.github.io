@@ -1,5 +1,5 @@
 ---
-title: 개린이의 관점에서 Combine 살펴보기(2)
+title: 개린이의 관점에서 Combine 살펴보기(2) - Publisher
 author: 1Consumption
 date: 2020-12-05 01:00:00 +0800
 categories: [iOS, Framework]
@@ -49,15 +49,15 @@ toc: true
 
 애플에서는 직접 `Publisher` 프로토콜을 채택해서 만드는 방법보다 `Combine`에서 제공하는 3가지 방법을 권장합니다.
 
-1. `Subject`의 하위 클래스
-2.  기본으로 제공되는 `Publisher`를 채택한 class
+1. `Subject`을 채택한 클래스 사용
+2.  Convenience Publishers 사용
 3. 프로퍼티에 `@Published` 어노테이션 추가
 
 이번 포스팅에서는 첫번째 방법에 대해 알아보도록 하겠습니다.
 
 `Subject`는 외부에서 값을 주입할 수 있는 `Publisher` 프로토콜 입니다. `send(_:)` 메소드를 통해 스트림에 값을 주입할 수 있습니다. 이 `Subject` 프로토콜을 채택한 구현체인  `PassthroughSubject`, `CurrentValueSubject`이 기본 제공 됩니다.
 
- `PassthroughSubject`와 `CurrentValueSubject`의 차이점은 초기값이 있냐 없냐로 나뉩니다. `CurrentValueSubject`은 초기값이 있고, 이전 값을 저장하는 반면,  `PassthroughSubject`는 초기값이 없고 이전 값을 저장하지 않습니다. 아래와 같이 선언하고, `send(_:)` 메소드를 통해 값을 주입할 수 있습니다. 
+ `PassthroughSubject`와 `CurrentValueSubject`의 차이점은 초기값이 있냐 없냐, 그리고 직전에 방출한 값을 저장을 하냐 안하냐로 나뉩니다. `CurrentValueSubject`은 초기값이 있고,  직전에 방출한 값을 저장하는 반면,  `PassthroughSubject`는 초기값이 없고 직전에 방출한 값을 저장하지 않습니다. 아래와 같이 선언하고, `send(_:)` 메소드를 통해 값을 주입할 수 있습니다. 
 
 ``` swift
 let passthroughSubject = PassthroughSubject<Int, Never>()
@@ -67,10 +67,15 @@ passthroughSubject.send(2) // value 2
 passthroughSubject.send(3) // value 3
 passthroughSubject.send(.finished) // publish finished
 
+print(currentValueSubject.value) // 1
 currentValueSubject.send(2) // value 2
-currentValueSubject.send(3) // value 2
+print(currentValueSubject.value) // 2
+currentValueSubject.send(3) // value 3
+print(currentValueSubject.value) // 3
 currentValueSubject.send(.finished) // publish finished
 ```
+
+<img src = "https://user-images.githubusercontent.com/37682858/101308298-e5fbe680-388c-11eb-8dba-afc31ee5c511.gif" width = 900>
 
 <br>
 
