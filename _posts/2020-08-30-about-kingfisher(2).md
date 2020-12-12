@@ -9,12 +9,6 @@ toc: true
 
 ---
 
-> 이 글은 개린이의 지식을 바탕으로 작성된 글입니다. 최대한 옳은 정보를 담으려고 노력하겠으나, 그럼에도 틀린 부분이 있을 수 있습니다. 혹여 발견하시면 댓글로 피드백 주시면 감사하겠습니다.
-
-> 개린이의 관점에서 Kingfisher 살펴보기 시리즈
->
-> 1. [개린이의 관점에서 Kingfisher 살펴보기(1) - 이미지 캐싱이란?](https://1consumption.github.io/posts/about-kingfisher(1))
-
 # 머리말
 
 저번 포스트에서 Kingfisher의 주요 기능에 대해서 알아볼 것이라고 했죠!ㅎ 그래서 [README](https://github.com/onevcat/Kingfisher)의 Features와 [Cheat sheat](https://github.com/onevcat/Kingfisher/wiki/Cheat-Sheet)를 바탕으로 관련이 있다 싶은 것들을 포스팅하겠습니다! 근데 좀 많네요... 일단 써보고 너무 많다 싶으면 여러개의 포스트로 나누겠습니다...ㅎ
@@ -183,6 +177,12 @@ imageView.kf.setImage(with: url, options: [.processor(processor)])
 * Fine control on cache behavior. Customizable expiration date and size limit.
 * Cancelable downloading and auto-reusing previous downloaded content to improve performance.
 * Independent components. Use the downloader, caching system and image processors separately as you need.
+
+> 이 글은 개린이의 지식을 바탕으로 작성된 글입니다. 최대한 옳은 정보를 담으려고 노력하겠으나, 그럼에도 틀린 부분이 있을 수 있습니다. 혹여 발견하시면 댓글로 피드백 주시면 감사하겠습니다.
+
+> 개린이의 관점에서 Kingfisher 살펴보기 시리즈
+>
+> 1. [개린이의 관점에서 Kingfisher 살펴보기(1) - 이미지 캐싱이란?](https://1consumption.github.io/posts/about-kingfisher(1))
 
 # 출처
 

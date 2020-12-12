@@ -9,14 +9,6 @@ toc: true
 
 ---
 
-> 이 글은 개린이의 지식을 바탕으로 작성된 글입니다. 최대한 옳은 정보를 담으려고 노력하겠으나, 그럼에도 틀린 부분이 있을 수 있습니다. 혹여 발견하시면 댓글로 피드백 주시면 감사하겠습니다.
-
-> 개린이의 관점에서 Kingfisher 살펴보기 시리즈
->
-> 1. [개린이의 관점에서 Kingfisher 살펴보기(1) - 이미지 캐싱이란?](https://1consumption.github.io/posts/about-kingfisher(1))
-> 2. [개린이의 관점에서 Kingfisher 살펴보기(2) - Kingfisher의 주요 기능](https://1consumption.github.io/posts/about-kingfisher(2))
-> 3. [개린이의 관점에서 Kingfisher 살펴보기(3) - Kingfisher의 주요 기능](https://1consumption.github.io/posts/about-kingfisher(3)/)
-
 # 머리말
 
 하하... 저번 포스팅 때도 미루고 미루고 어쩌구 저쩌구로 시작했던 것 같은데.... 정말 오랜만에 글을 씁니다...ㅎㅎ 글을 안 써 버릇 하니까 계속 쓰기 싫고... 참 큰일이네요ㅎ
@@ -148,6 +140,14 @@ public struct KingfisherWrapper<Base> {
 * Built-in transition animation when setting images.
 * Customizable placeholder and indicator while loading images.
 * Extensible image processing and image format easily.
+
+> 이 글은 개린이의 지식을 바탕으로 작성된 글입니다. 최대한 옳은 정보를 담으려고 노력하겠으나, 그럼에도 틀린 부분이 있을 수 있습니다. 혹여 발견하시면 댓글로 피드백 주시면 감사하겠습니다.
+
+> 개린이의 관점에서 Kingfisher 살펴보기 시리즈
+>
+> 1. [개린이의 관점에서 Kingfisher 살펴보기(1) - 이미지 캐싱이란?](https://1consumption.github.io/posts/about-kingfisher(1))
+> 2. [개린이의 관점에서 Kingfisher 살펴보기(2) - Kingfisher의 주요 기능](https://1consumption.github.io/posts/about-kingfisher(2))
+> 3. [개린이의 관점에서 Kingfisher 살펴보기(3) - Kingfisher의 주요 기능](https://1consumption.github.io/posts/about-kingfisher(3)/)
 
 # 출처
 

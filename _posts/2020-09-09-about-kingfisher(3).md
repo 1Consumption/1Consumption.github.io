@@ -9,13 +9,6 @@ toc: true
 
 ---
 
-> 이 글은 개린이의 지식을 바탕으로 작성된 글입니다. 최대한 옳은 정보를 담으려고 노력하겠으나, 그럼에도 틀린 부분이 있을 수 있습니다. 혹여 발견하시면 댓글로 피드백 주시면 감사하겠습니다.
-
-> 개린이의 관점에서 Kingfisher 살펴보기 시리즈
->
-> 1. [개린이의 관점에서 Kingfisher 살펴보기(1) - 이미지 캐싱이란?](https://1consumption.github.io/posts/about-kingfisher(1))
-> 2. [개린이의 관점에서 Kingfisher 살펴보기(2) - Kingfisher의 주요 기능](https://1consumption.github.io/posts/about-kingfisher(2))
-
 # 머리말
 
 안녕하세요ㅎ 오랜만에 글을 씁니다. 요새 개강도 했고, 따로 프로젝트도 하고 있어서 미루고 미루다가 다시 포스팅 합니다ㅎ 
@@ -256,6 +249,13 @@ imageView.kf.setImage(with: url, options: [.processor(processor)])
 * Extensible image processing and image format easily.
 
 ~~SwiftUI 관련 기능은 제가 할줄 모르는 관계로 스킵하겠습니다..ㅎ~~
+
+> 이 글은 개린이의 지식을 바탕으로 작성된 글입니다. 최대한 옳은 정보를 담으려고 노력하겠으나, 그럼에도 틀린 부분이 있을 수 있습니다. 혹여 발견하시면 댓글로 피드백 주시면 감사하겠습니다.
+
+> 개린이의 관점에서 Kingfisher 살펴보기 시리즈
+>
+> 1. [개린이의 관점에서 Kingfisher 살펴보기(1) - 이미지 캐싱이란?](https://1consumption.github.io/posts/about-kingfisher(1))
+> 2. [개린이의 관점에서 Kingfisher 살펴보기(2) - Kingfisher의 주요 기능](https://1consumption.github.io/posts/about-kingfisher(2))
 
 # 출처
 

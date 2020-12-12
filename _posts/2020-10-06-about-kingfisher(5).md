@@ -9,15 +9,6 @@ toc: true
 
 ---
 
-> 이 글은 개린이의 지식을 바탕으로 작성된 글입니다. 최대한 옳은 정보를 담으려고 노력하겠으나, 그럼에도 틀린 부분이 있을 수 있습니다. 혹여 발견하시면 댓글로 피드백 주시면 감사하겠습니다.
-
-> 개린이의 관점에서 Kingfisher 살펴보기 시리즈
->
-> 1. [개린이의 관점에서 Kingfisher 살펴보기(1) - 이미지 캐싱이란?](https://1consumption.github.io/posts/about-kingfisher(1))
-> 2. [개린이의 관점에서 Kingfisher 살펴보기(2) - Kingfisher의 주요 기능](https://1consumption.github.io/posts/about-kingfisher(2))
-> 3. [개린이의 관점에서 Kingfisher 살펴보기(3) - Kingfisher의 주요 기능](https://1consumption.github.io/posts/about-kingfisher(3)/)
-> 4. [개린이의 관점에서 Kingfisher 살펴보기(4) - Kingfisher의 주요 기능](https://1consumption.github.io/posts/about-kingfisher(4)/)
-
 # 머리말
 
 이제 정말!!! Kingfisher의 주요 기능에 대한 마지막 포스팅입니다. 진짜임;;;; 이번에 소개할 기능들에 대한 스크린샷이 많아서 보시는데 지루하지 않을 거에용ㅎ 아님 말고
@@ -409,6 +400,15 @@ switch imageFormat {
 많이 부족한 실력으로 라이브러리를 까보다 보니 얼렁뚱땅 넘어간 부분도 많고 정확하지 않은 부분도 많지만 읽어주셔서 감사합니다ㅎㅎ 저도 이 라이브러리를 분석하면서 어떻게 하면 코드를 효율적으로 짤 수 있는지, 확장성은 어떻게 고려하는지 등을 배울 수 있었습니다. 좋은 시간이었어요ㅎㅎㅎㅎㅎ
 
 그럼 다음 포스팅 때 만나요~~~
+
+> 이 글은 개린이의 지식을 바탕으로 작성된 글입니다. 최대한 옳은 정보를 담으려고 노력하겠으나, 그럼에도 틀린 부분이 있을 수 있습니다. 혹여 발견하시면 댓글로 피드백 주시면 감사하겠습니다.
+
+> 개린이의 관점에서 Kingfisher 살펴보기 시리즈
+>
+> 1. [개린이의 관점에서 Kingfisher 살펴보기(1) - 이미지 캐싱이란?](https://1consumption.github.io/posts/about-kingfisher(1))
+> 2. [개린이의 관점에서 Kingfisher 살펴보기(2) - Kingfisher의 주요 기능](https://1consumption.github.io/posts/about-kingfisher(2))
+> 3. [개린이의 관점에서 Kingfisher 살펴보기(3) - Kingfisher의 주요 기능](https://1consumption.github.io/posts/about-kingfisher(3)/)
+> 4. [개린이의 관점에서 Kingfisher 살펴보기(4) - Kingfisher의 주요 기능](https://1consumption.github.io/posts/about-kingfisher(4)/)
 
 # 출처
 
