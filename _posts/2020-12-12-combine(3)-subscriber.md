@@ -17,11 +17,11 @@ toc: true
 
 ## Subscriber란?
 
-`Publisher`의 `Input`을 받을 수 있는 타입을 선언하는 프로토콜입니다. 이전 포스팅에서 말했던 것처럼 `Subscriber` 의 Input, Failure는 `Publisher`의 Output, Failure와 일치해야합니다. 그리고 `Subscriber` 인스턴스는 `Publisher`로 부터 데이터의 흐름을 받습니다.
+Publisher로부터 Input을 받을 수 있는 타입을 선언하는 프로토콜입니다. 이전 포스팅에서 말했던 것처럼 Subscriber 의 Input, Failure는 Publisher의 Output, Failure와 일치해야합니다. 그리고 Subscriber 인스턴스는 Publisher로 부터 데이터의 흐름을 받습니다.
 
-`Subscriber` 가 `Publisher`의 데이터를 받는 것 또한 [combine(2) - publisher](https://1consumption.github.io/posts/combine(2)-publisher/)에서 설명했었군요. 간단히 다시 알아보겠습니다.
+Subscriber 가 Publisher의 데이터를 받는 것 또한 [combine(2) - publisher](https://1consumption.github.io/posts/combine(2)-publisher/)에서 설명했었군요. 간단히 다시 알아보겠습니다.
 
-publisher의 `subscribe(_:)` 메소드를 호출해서 `Publisher`와 `Subscriber`를 연결하고, 이 메소드가 불리고 난 후 publisher는 `Subscriber`의 `receive(subscription:)`메소드를 통해 `Subscription` 인스턴스를 받아 publisher로부터 데이터를 요구할 수 있고, 구독을 취소할 수도 있습니다. 
+Publisher의 `subscribe(_:)` 메소드를 호출해서 Publisher와 Subscriber를 연결하고, 이 메소드가 불리고 난 후 publisher는 subscriber의 `receive(subscription:)`메소드를 통해 `Subscription` 인스턴스를 받아 publisher로부터 데이터를 요구할 수 있고, 구독을 취소할 수도 있습니다. 
 
 그다음 publisher는 subscriber의 `receive(_:)`메소드를 비동기로 호출하고 새로 발행된 데이터를 전달합니다.
 
